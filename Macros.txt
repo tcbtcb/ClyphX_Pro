@@ -1,0 +1,214 @@
+#********************************** [SETTINGS NOTES] **********************************
+
+# Please DO NOT change any of the spacing in this file.
+
+# Please DO NOT change the name of this file or its file extension.  When done making
+# your changes to the settings below, just save the file.
+
+# After saving this file, you will need to load a new Live Set/reload the
+# current Live Set for your changes to take effect.
+
+
+
+# --------------------------------------------------------------------------------------
+
+[MACROS]
+
+# Below, you can specify a list of Macros to use in Action Lists.
+
+# The entry format is $MACRO_NAME$ = ACTION(s)
+
+# --------------------------------------------------------------------------------------
+# | ENTRY      |  DESCRIPTION
+# --------------------------------------------------------------------------------------
+# | MACRO_NAME |  A unique one-word name for the Macro enclosed in dollar signs.
+# --------------------------------------------------------------------------------------
+# | ACTION(s)  |  The Action(s) to assign to the Macro.  You can also assign Macros to
+# |            |  other Macros.
+# --------------------------------------------------------------------------------------
+
+# See the Macros section of the manual for more info on Macros.
+
+# --------------------------------------------------------------------------------------
+
+# Below is an example list that has been commented out (the # at the beginning of
+# a line makes the line a comment). Your list should be formatted in the same way
+# except without the # at the beginning of each line.
+
+# Single line Macro:
+# $EX_MACRO_1$ = METRO
+
+# Multi line Macro type 1 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_2$ = ARM;
+#  SOLO;
+
+# Multi line Macro type 2 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_3$ =
+#  ARM;
+#  SOLO;
+
+# --------------------------------------------------------------------------------------
+
+# >>>>>>>> DELETE THIS ENTIRE LINE AND START YOUR LIST HERE <<<<<<<<
+
+$FADER_BANK_ONE$ = 
+ BIND FADER_1 1/VOL; 
+ BIND FADER_2 2/VOL; 
+ BIND FADER_3 3/VOL; 
+ BIND FADER_4 4/VOL; 
+ BIND FADER_5 5/VOL; 
+ BIND FADER_6 6/VOL; 
+ BIND FADER_7 7/VOL;
+ BIND FADER_8 8/VOL; 
+ BIND FADER_9 9/DEV("Dub") "feedback";
+
+
+$FADER_BANK_TWO$ = 
+ BIND FADER_1 10/VOL; 
+ BIND FADER_2 11/VOL; 
+ BIND FADER_3 12/VOL; 
+ BIND FADER_4 13/VOL; 
+ BIND FADER_5 14/VOL; 
+ BIND FADER_6 15/VOL; 
+ BIND FADER_7 16/VOL; 
+ BIND FADER_8 8/VOL; 
+ BIND FADER_9 9/DEV("Dub") "feedback";
+
+
+$FADER_SEND_A_ONE$ = 
+ BIND FADER_1 1/SEND A; 
+ BIND FADER_2 2/SEND A; 
+ BIND FADER_3 3/SEND A; 
+ BIND FADER_4 4/SEND A; 
+ BIND FADER_5 5/SEND A; 
+ BIND FADER_6 6/SEND A; 
+ BIND FADER_7 7/SEND A; 
+
+$FADER_SEND_A_TWO$ = 
+ BIND FADER_1 10/SEND A; 
+ BIND FADER_2 11/SEND A; 
+ BIND FADER_3 12/SEND A; 
+ BIND FADER_4 13/SEND A; 
+ BIND FADER_5 14/SEND A; 
+ BIND FADER_6 15/SEND A; 
+ BIND FADER_7 16/SEND A; 
+
+$FADER_SEND_B_ONE$ = 
+ BIND FADER_1 1/SEND B; 
+ BIND FADER_2 2/SEND B; 
+ BIND FADER_3 3/SEND B; 
+ BIND FADER_4 4/SEND B; 
+ BIND FADER_5 5/SEND B; 
+ BIND FADER_6 6/SEND B; 
+ BIND FADER_7 7/SEND B; 
+
+$FADER_SEND_B_TWO$ = 
+ BIND FADER_1 10/SEND B; 
+ BIND FADER_2 11/SEND B; 
+ BIND FADER_3 12/SEND B; 
+ BIND FADER_4 13/SEND B; 
+ BIND FADER_5 14/SEND B; 
+ BIND FADER_6 15/SEND B; 
+ BIND FADER_7 16/SEND B; 
+
+
+
+$LISTENER_ONE$ = 
+ BIND REC_BUTTON_1 8/DEV(1) CH(1) VOL; 
+ BIND REC_BUTTON_2 8/DEV(1) CH(2) VOL; 
+ BIND REC_BUTTON_3 8/DEV(1) CH(3) VOL; 
+ BIND REC_BUTTON_4 8/DEV(1) CH(4) VOL; 
+ BIND REC_BUTTON_5 8/DEV(1) CH(5) VOL; 
+ BIND REC_BUTTON_6 8/DEV(1) CH(6) VOL; 
+ BIND REC_BUTTON_7 8/DEV(1) CH(7) VOL;
+
+$LISTENER_TWO$ = 
+ BIND REC_BUTTON_1 8/DEV(1) CH(8) VOL; 
+ BIND REC_BUTTON_2 8/DEV(1) CH(9) VOL; 
+ BIND REC_BUTTON_3 8/DEV(1) CH(10) VOL; 
+ BIND REC_BUTTON_4 8/DEV(1) CH(11) VOL; 
+ BIND REC_BUTTON_5 8/DEV(1) CH(12) VOL; 
+ BIND REC_BUTTON_6 8/DEV(1) CH(13) VOL; 
+ BIND REC_BUTTON_7 8/DEV(1) CH(14) VOL; 
+
+$ENCODER_BUTTON_FILTER_ONE$ = 
+ BIND ENCODER_BUTTON_1 1/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_2 2/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_3 3/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_4 4/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_5 5/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_6 6/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_7 7/DEV("hp_filter") "Device On"; 
+
+$ENCODER_BUTTON_FILTER_TWO$ = 
+ BIND ENCODER_BUTTON_1 10/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_2 11/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_3 12/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_4 13/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_5 14/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_6 15/DEV("hp_filter") "Device On"; 
+ BIND ENCODER_BUTTON_7 16/DEV("hp_filter") "Device On"; 
+
+$ENCODER_KNOB_FILTER_ONE$ = 
+ BIND ENCODER_KNOB_1 1/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_2 2/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_3 3/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_4 4/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_5 5/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_6 6/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_7 7/DEV("hp_filter") "freq";
+
+$ENCODER_KNOB_FILTER_TWO$ = 
+ BIND ENCODER_KNOB_1 10/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_2 11/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_3 12/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_4 13/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_5 14/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_6 15/DEV("hp_filter") "freq"; 
+ BIND ENCODER_KNOB_7 16/DEV("hp_filter") "freq"; 
+
+$SELECT_BUTTON_SELECT_ONE$ = 
+ BIND SELECT_BUTTON_1 1/SEL;
+ BIND SELECT_BUTTON_2 2/SEL;
+ BIND SELECT_BUTTON_3 3/SEL;
+ BIND SELECT_BUTTON_4 4/SEL;
+ BIND SELECT_BUTTON_5 5/SEL;
+ BIND SELECT_BUTTON_6 6/SEL;
+ BIND SELECT_BUTTON_7 7/SEL;
+
+$SELECT_BUTTON_SELECT_TWO$ = 
+ BIND SELECT_BUTTON_1 10/SEL;
+ BIND SELECT_BUTTON_2 11/SEL;
+ BIND SELECT_BUTTON_3 12/SEL;
+ BIND SELECT_BUTTON_4 13/SEL;
+ BIND SELECT_BUTTON_5 14/SEL;
+ BIND SELECT_BUTTON_6 15/SEL;
+ BIND SELECT_BUTTON_7 16/SEL;
+
+$MUTE_BUTTON_MUTE_ONE$ =
+ BIND MUTE_BUTTON_1 1/MUTE;
+ BIND MUTE_BUTTON_2 2/MUTE;
+ BIND MUTE_BUTTON_3 3/MUTE;
+ BIND MUTE_BUTTON_4 4/MUTE;
+ BIND MUTE_BUTTON_5 5/MUTE;
+ BIND MUTE_BUTTON_6 6/MUTE;
+ BIND MUTE_BUTTON_7 7/MUTE;
+
+$MUTE_BUTTON_MUTE_TWO$ =
+ BIND MUTE_BUTTON_1 10/MUTE;
+ BIND MUTE_BUTTON_2 11/MUTE;
+ BIND MUTE_BUTTON_3 12/MUTE;
+ BIND MUTE_BUTTON_4 13/MUTE;
+ BIND MUTE_BUTTON_5 14/MUTE;
+ BIND MUTE_BUTTON_6 15/MUTE;
+ BIND MUTE_BUTTON_7 16/MUTE;
+
+$FADER_SEL_DEVICE$ = 
+ BIND FADER_1 SEL/DEV(SEL) B1 P1;
+ BIND FADER_2 SEL/DEV(SEL) B1 P2;
+ BIND FADER_3 SEL/DEV(SEL) B1 P3;
+ BIND FADER_4 SEL/DEV(SEL) B1 P4;
+ BIND FADER_5 SEL/DEV(SEL) B1 P5;
+ BIND FADER_6 SEL/DEV(SEL) B1 P6;
+ BIND FADER_7 SEL/DEV(SEL) B1 P7;
+ BIND FADER_8 SEL/DEV(SEL) B1 P8;
