@@ -212,3 +212,62 @@ $FADER_SEL_DEVICE$ =
  BIND FADER_6 SEL/DEV(SEL) B1 P6;
  BIND FADER_7 SEL/DEV(SEL) B1 P7;
  BIND FADER_8 SEL/DEV(SEL) B1 P8;
+
+$CS80_DEVICE_1$ = 
+ BIND FADER_1 SEL/DEV("CS-80 V3") "HighPass1 CutOff";
+ BIND FADER_2 SEL/DEV("CS-80 V3") "HighPass1 Resonance";
+ BIND FADER_3 SEL/DEV("CS-80 V3") "LowPass1 CutOff";
+ BIND FADER_4 SEL/DEV("CS-80 V3") "LowPass1 Resonance";
+ BIND FADER_5 SEL/DEV("CS-80 V3") "VCF1 Initial Level";
+ BIND FADER_6 SEL/DEV("CS-80 V3") "VCF1 Attack Level";
+ BIND FADER_7 SEL/DEV("CS-80 V3") "VCF1 Attack Time";
+ BIND FADER_8 SEL/DEV("CS-80 V3") "VCF1 Decay Time";
+ BIND FADER_9 SEL/DEV("CS-80 V3") "VCF1 Release Time";
+ BIND ENCODER_KNOB_1 SEL/DEV("CS-80 V3") "RingMod Attack";
+ BIND ENCODER_KNOB_2 SEL/DEV("CS-80 V3") "RingMod Decay";
+ BIND ENCODER_KNOB_3 SEL/DEV("CS-80 V3") "RingMod Depth";
+ BIND ENCODER_KNOB_4 SEL/DEV("CS-80 V3") "RingMod Speed";
+ BIND ENCODER_KNOB_5 SEL/DEV("CS-80 V3") "RingMod Modulation";
+ BIND ENCODER_BUTTON_1 SEL/DEV("CS-80 V3") "Filter1 Type";
+ BIND ENCODER_BUTTON_2 SEL/DEV("CS-80 V3") "HighPass1";
+ BIND ENCODER_BUTTON_3 SEL/DEV("CS-80 V3") "LowPass1";
+
+$CS80_DEVICE_2$ = 
+ BIND FADER_1 SEL/DEV("CS-80 V3") "VCF1 Level";
+ BIND FADER_2 SEL/DEV("CS-80 V3") "Osc1 Sine";
+ BIND FADER_3 SEL/DEV("CS-80 V3") "VCA1 Attack Time";
+ BIND FADER_4 SEL/DEV("CS-80 V3") "VCA1 Decay Time";
+ BIND FADER_5 SEL/DEV("CS-80 V3") "VCA1 Sustain Level";
+ BIND FADER_6 SEL/DEV("CS-80 V3") "VCA1 Release Time";
+ BIND FADER_7 SEL/DEV("CS-80 V3") "VCA1 Level";
+ BIND FADER_8 SEL/DEV("CS-80 V3") "Initial Brilliance1";
+ BIND FADER_9 SEL/DEV("CS-80 V3") "Initial Level1";
+ BIND ENCODER_KNOB_1 SEL/DEV("CS-80 V3") "Sub Wave";
+ BIND ENCODER_KNOB_2 SEL/DEV("CS-80 V3") "Sub Speed";
+ BIND ENCODER_KNOB_3 SEL/DEV("CS-80 V3") "Sub Vco";
+ BIND ENCODER_KNOB_4 SEL/DEV("CS-80 V3") "Sub Vcf";
+ BIND ENCODER_KNOB_5 SEL/DEV("CS-80 V3") "Sub Vca";
+
+$PROPHET_DEVICE_1$ = 
+ BIND FADER_1 SEL/DEV("Prophet") "cutoff";
+ BIND FADER_2 SEL/DEV("Prophet V3") "Filter Resonance";
+ BIND FADER_3 SEL/DEV("Prophet V3") "Filter Envelope Amount";
+ BIND FADER_4 SEL/DEV("Prophet V3") "Filter Keyb";
+ BIND FADER_5 SEL/DEV("Prophet V3") "Envelope Filter Attack";
+ BIND FADER_6 SEL/DEV("Prophet V3") "Envelope Filter Decay";
+ BIND FADER_7 SEL/DEV("Prophet V3") "Envelope Filter Sustain";
+ BIND FADER_8 SEL/DEV("Prophet V3") "Envelope Filter Release";
+ BIND FADER_9 SEL/DEV("Prophet V3") "General Volume";
+ BIND ENCODER_KNOB_1 SEL/DEV("Prophet V3") "PolyMod EnvFilter";
+ BIND ENCODER_KNOB_2 SEL/DEV("Prophet V3") "PolyMod Osc B";
+ BIND ENCODER_KNOB_3 SEL/DEV("Prophet V3") "Osc A Freq";
+ BIND ENCODER_KNOB_4 SEL/DEV("Prophet V3") "Osc A Width";
+ BIND ENCODER_KNOB_5 SEL/DEV("Prophet V3") "Pro5 Mixer Osc A";
+ BIND ENCODER_KNOB_6 SEL/DEV("Prophet V3") "Pro5 Mixer Osc B";
+ BIND ENCODER_KNOB_7 SEL/DEV("Prophet V3") "Pro5 Mixer Noise";
+ BIND ENCODER_BUTTON_1 SEL/DEV("Prophet V3") "PolyMod Freq Osc A";
+ BIND ENCODER_BUTTON_2 SEL/DEV("Prophet V3") "PolyMod PW Osc A";
+ BIND ENCODER_BUTTON_3 SEL/DEV("Prophet V3") "PolyMod Filter";
+ BIND ENCODER_BUTTON_4 SEL/DEV("Prophet V3") "Osc A Saw";
+ BIND ENCODER_BUTTON_5 SEL/DEV("Prophet V3") "Osc A Square";
+ BIND ENCODER_BUTTON_6 SEL/DEV("Prophet V3") "Osc A Synchro";
