@@ -52,15 +52,15 @@
 # >>>>>>>> DELETE THIS ENTIRE LINE AND START YOUR LIST HERE <<<<<<<<
 
 $FADER_BANK_ONE$ = 
- BIND FADER_1 1/VOL; 
- BIND FADER_2 2/VOL; 
- BIND FADER_3 3/VOL; 
- BIND FADER_4 4/VOL; 
- BIND FADER_5 5/VOL; 
- BIND FADER_6 6/VOL; 
- BIND FADER_7 7/VOL;
- BIND FADER_8 8/VOL; 
- BIND FADER_9 MST/XFADER;
+ BIND FADER_1 /VOL; 
+ BIND FADER_2 "kick"/VOL; 
+ BIND FADER_3 "snare"/VOL; 
+ BIND FADER_4 "hat"/VOL; 
+ BIND FADER_5 "top"/VOL; 
+ BIND FADER_6 "bass"/VOL; 
+ BIND FADER_7 "deck_1"/VOL;
+ BIND FADER_8 "deck_2"/VOL; 
+ BIND FADER_9 "fx"/VOL;
 
 $FADER_SEND_A_ONE$ = 
  BIND FADER_1 1/SEND A; 
@@ -81,14 +81,13 @@ $FADER_SEND_B_ONE$ =
  BIND FADER_7 7/SEND B; 
 
 $DUB_LISTENER_ONE$ = 
- BIND REC_BUTTON_1 "single_channel_dub"/DEV(1) CH(1) VOL; 
- BIND REC_BUTTON_2 "single_channel_dub"/DEV(1) CH(2) VOL; 
- BIND REC_BUTTON_3 "single_channel_dub"/DEV(1) CH(3) VOL; 
- BIND REC_BUTTON_4 "single_channel_dub"/DEV(1) CH(4) VOL; 
- BIND REC_BUTTON_5 "single_channel_dub"/DEV(1) CH(5) VOL; 
- BIND REC_BUTTON_6 "single_channel_dub"/DEV(1) CH(6) VOL; 
- BIND REC_BUTTON_7 "single_channel_dub"/DEV(1) CH(7) VOL;
- BIND REC_BUTTON_8 "single_channel_dub"/DEV(1) CH(8) VOL;
+ BIND REC_BUTTON_2 "single_channel_dub"/DEV(1) CH("kick") VOL; 
+ BIND REC_BUTTON_3 "single_channel_dub"/DEV(1) CH("snare") VOL; 
+ BIND REC_BUTTON_4 "single_channel_dub"/DEV(1) CH("hat") VOL; 
+ BIND REC_BUTTON_5 "single_channel_dub"/DEV(1) CH("top") VOL; 
+ BIND REC_BUTTON_6 "single_channel_dub"/DEV(1) CH("bass") VOL; 
+ BIND REC_BUTTON_7 "single_channel_dub"/DEV(1) CH("deck_1") VOL;
+ BIND REC_BUTTON_8 "single_channel_dub"/DEV(1) CH("deck_2") VOL;
 
 $SELECT_BUTTON_SELECT_ONE$ = 
  BIND SELECT_BUTTON_1 1/SEL;
