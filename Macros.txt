@@ -53,16 +53,15 @@
 
 $FADER_BANK_ONE$ = 
  BIND FADER_1 /VOL; 
- BIND FADER_2 "kick"/VOL; 
- BIND FADER_3 "snare"/VOL; 
- BIND FADER_4 "hat"/VOL; 
- BIND FADER_5 "top"/VOL; 
- BIND FADER_6 "bass"/VOL; 
- BIND FADER_7 "deck_1"/VOL;
- BIND FADER_8 "deck_2"/VOL; 
- BIND FADER_9 "fx"/VOL;
+ BIND FADER_2 "drums"/VOL; 
+ BIND FADER_3 "bass"/VOL; 
+ BIND FADER_4 "guitars"/VOL; 
+ BIND FADER_5 "keys"/VOL; 
+ BIND FADER_6 "leads"/VOL; 
+ BIND FADER_7 "pads"/VOL;
+ BIND FADER_8 "f/x"/VOL; 
 
-$FADER_SEND_A_ONE$ = 
+$FADER_SEND_A$ = 
  BIND FADER_1 1/SEND A; 
  BIND FADER_2 2/SEND A; 
  BIND FADER_3 3/SEND A; 
@@ -70,8 +69,9 @@ $FADER_SEND_A_ONE$ =
  BIND FADER_5 5/SEND A; 
  BIND FADER_6 6/SEND A; 
  BIND FADER_7 7/SEND A; 
+ BIND FADER_8 8/SEND A; 
 
-$FADER_SEND_B_ONE$ = 
+$FADER_SEND_B$ = 
  BIND FADER_1 1/SEND B; 
  BIND FADER_2 2/SEND B; 
  BIND FADER_3 3/SEND B; 
@@ -79,15 +79,36 @@ $FADER_SEND_B_ONE$ =
  BIND FADER_5 5/SEND B; 
  BIND FADER_6 6/SEND B; 
  BIND FADER_7 7/SEND B; 
+ BIND FADER_8 8/SEND B; 
+
+$FADER_SEND_C$ = 
+ BIND FADER_1 1/SEND C; 
+ BIND FADER_2 2/SEND C; 
+ BIND FADER_3 3/SEND C; 
+ BIND FADER_4 4/SEND C; 
+ BIND FADER_5 5/SEND C; 
+ BIND FADER_6 6/SEND C; 
+ BIND FADER_7 7/SEND C; 
+ BIND FADER_8 8/SEND C; 
+
+$FADER_SEND_D$ = 
+ BIND FADER_1 1/SEND D; 
+ BIND FADER_2 2/SEND D; 
+ BIND FADER_3 3/SEND D; 
+ BIND FADER_4 4/SEND D; 
+ BIND FADER_5 5/SEND D; 
+ BIND FADER_6 6/SEND D; 
+ BIND FADER_7 7/SEND D; 
+ BIND FADER_8 8/SEND D; 
 
 $DUB_LISTENER_ONE$ = 
- BIND REC_BUTTON_2 "single_channel_dub"/DEV(1) CH("kick") VOL; 
- BIND REC_BUTTON_3 "single_channel_dub"/DEV(1) CH("snare") VOL; 
- BIND REC_BUTTON_4 "single_channel_dub"/DEV(1) CH("hat") VOL; 
- BIND REC_BUTTON_5 "single_channel_dub"/DEV(1) CH("top") VOL; 
- BIND REC_BUTTON_6 "single_channel_dub"/DEV(1) CH("bass") VOL; 
- BIND REC_BUTTON_7 "single_channel_dub"/DEV(1) CH("deck_1") VOL;
- BIND REC_BUTTON_8 "single_channel_dub"/DEV(1) CH("deck_2") VOL;
+ BIND REC_BUTTON_2 "single_channel_dub"/DEV(1) CH("drums") VOL; 
+ BIND REC_BUTTON_3 "single_channel_dub"/DEV(1) CH("bass") VOL; 
+ BIND REC_BUTTON_4 "single_channel_dub"/DEV(1) CH("guitars") VOL; 
+ BIND REC_BUTTON_5 "single_channel_dub"/DEV(1) CH("keys") VOL; 
+ BIND REC_BUTTON_6 "single_channel_dub"/DEV(1) CH("leads") VOL; 
+ BIND REC_BUTTON_7 "single_channel_dub"/DEV(1) CH("pads") VOL;
+ BIND REC_BUTTON_8 "single_channel_dub"/DEV(1) CH("f/x") VOL;
 
 $SELECT_BUTTON_SELECT_ONE$ = 
  BIND SELECT_BUTTON_1 1/SEL;
