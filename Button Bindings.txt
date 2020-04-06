@@ -150,6 +150,24 @@ VERSION = v1.0.5
 
 # BTN_3 = CC, 9, 2, 127, 0, SEL/DEV(SEL) "Device On"
 
+####
+# Notes on note numbers
+#
+# Ableton Live receives a 'longer' keybard than some MIDI devices. 
+# So, for example C1 = 36, there is a '-2 octave' in Live
+# for referce, then the C values are 
+# C-2 = 0
+# C-1 = 12
+# C0  = 24
+# C1  = 36
+# C2  = 48 
+# C3  = 60
+# C4  = 72
+# C5  = 84
+# C6  = 96
+# C7  = 108
+# C8  = 120
+
 # mute button
 MUTE_BUTTON_1 = NOTE, 1, 16, 0, 127, NONE
 MUTE_BUTTON_2 = NOTE, 1, 17, 0, 127, NONE
@@ -202,3 +220,26 @@ SELECT_BUTTON_8 = NOTE, 1, 31, 0, 127, NONE
 
 # jog wheel
 JOB_WHEEL_BUTTON = NOTE, 1, F7, 0, 127, NONE
+
+# master section Buttons
+## first column
+MASTER_MIXER_BUTTON = NOTE, 1, 84, 0, 127, NONE
+MASTER_READ_BUTTON = NOTE, 1, 74, 0, 127, NONE
+MASTER_WRITE_BUTTON = NOTE, 1, 75, 0, 127, NONE
+
+## second column
+MASTER_CHANNEL_BACK = NOTE, 1, 48, 0, 127, NONE
+MASTER_BANK_BACK = NOTE, 1, 46, 0, 127, NONE
+MASTER_TRANS_BACK = NOTE, 1, 91, 0, 127, NONE
+MASTER_PLAY = NOTE, 1, 94, 0, 127, NONE
+MASTER_RECORD = NOTE, 1, 95, 0, 127, NONE
+MASTER_ZOOM_HORIZONTAL = NOTE, 1, 110, 0, 127, NONE
+
+## third column
+MASTER_CHANNEL_FORWARD = NOTE, 1, 49, 0, 127, NONE
+MASTER_BANK_FORWARD = NOTE, 1, 47, 0, 127, NONE
+MASTER_TRANS_FORWARD = NOTE, 1, 92, 0, 127, NONE
+MASTER_STOP = NOTE, 1, 93, 0, 127, NONE
+MASTER_LOOP = NOTE, 1, 86, 0, 127, NONE
+MASTER_ = NOTE, 1, 111, 0, 127, NONE
+
