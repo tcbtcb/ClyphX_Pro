@@ -50,7 +50,6 @@
 # --------------------------------------------------------------------------------------
 
 # >>>>>>>> DELETE THIS ENTIRE LINE AND START YOUR LIST HERE <<<<<<<<
-1/DEV(1) "Macro 1"
 $FADER_BANK_ONE$ = 
  BIND FADER_1 "single_channel_dub"/DEV("dub-delay") "feedback"; 
  BIND FADER_2 "drums"/VOL; 
@@ -60,6 +59,7 @@ $FADER_BANK_ONE$ =
  BIND FADER_6 "leads"/VOL; 
  BIND FADER_7 "pads"/VOL;
  BIND FADER_8 "f/x"/VOL; 
+ BIND FADER_9 "filter"/DEV("filter_effect") "cutoff";
 
 $FADER_SEND_A$ = 
  BIND FADER_1 1/SEND A; 
@@ -101,7 +101,19 @@ $FADER_SEND_D$ =
  BIND FADER_7 7/SEND D; 
  BIND FADER_8 8/SEND D; 
 
+$FADER_SEND_E$ = 
+ BIND FADER_1 1/SEND E; 
+ BIND FADER_2 2/SEND E; 
+ BIND FADER_3 3/SEND E; 
+ BIND FADER_4 4/SEND E; 
+ BIND FADER_5 5/SEND E; 
+ BIND FADER_6 6/SEND E; 
+ BIND FADER_7 7/SEND E; 
+ BIND FADER_8 8/SEND E; 
+
+
 $DUB_LISTENER_ONE$ = 
+ BIND REC_BUTTON_1 "single_channel_dub"/DEV("listener") CH("dub_bus") VOL; 
  BIND REC_BUTTON_2 "single_channel_dub"/DEV("listener") CH("drums") VOL; 
  BIND REC_BUTTON_3 "single_channel_dub"/DEV("listener") CH("bass") VOL; 
  BIND REC_BUTTON_4 "single_channel_dub"/DEV("listener") CH("guitars") VOL; 
@@ -111,6 +123,7 @@ $DUB_LISTENER_ONE$ =
  BIND REC_BUTTON_8 "single_channel_dub"/DEV("listener") CH("f/x") VOL;
 
 $FILTER_LISTENER_ONE$ = 
+ BIND SOLO_BUTTON_1 "single_channel_dub"/DEV("listener") CH("filter") VOL;
  BIND SOLO_BUTTON_2 "filter"/DEV("listener") CH("drums") VOL; 
  BIND SOLO_BUTTON_3 "filter"/DEV("listener") CH("bass") VOL; 
  BIND SOLO_BUTTON_4 "filter"/DEV("listener") CH("guitars") VOL; 
@@ -118,9 +131,6 @@ $FILTER_LISTENER_ONE$ =
  BIND SOLO_BUTTON_6 "filter"/DEV("listener") CH("leads") VOL; 
  BIND SOLO_BUTTON_7 "filter"/DEV("listener") CH("pads") VOL;
  BIND SOLO_BUTTON_8 "filter"/DEV("listener") CH("f/x") VOL;
-
-$JOG_WHEEL$ =
- BIND JOG_WHEEL "filter"/DEV("filter_effect") "cutoff";
 
 $SELECT_BUTTON_SELECT_ONE$ = 
  BIND SELECT_BUTTON_1 1/SEL;
@@ -133,7 +143,6 @@ $SELECT_BUTTON_SELECT_ONE$ =
  BIND SELECT_BUTTON_8 8/SEL;
 
 $MUTE_BUTTON_MUTE_ONE$ =
- BIND MUTE_BUTTON_1 1/MUTE;
  BIND MUTE_BUTTON_2 2/MUTE;
  BIND MUTE_BUTTON_3 3/MUTE;
  BIND MUTE_BUTTON_4 4/MUTE;
@@ -204,12 +213,29 @@ $PROPHET_DEVICE_1$ =
  BIND ENCODER_KNOB_5 SEL/DEV("Prophet V3") "Pro5 Mixer Osc A";
  BIND ENCODER_KNOB_6 SEL/DEV("Prophet V3") "Pro5 Mixer Osc B";
  BIND ENCODER_KNOB_7 SEL/DEV("Prophet V3") "Pro5 Mixer Noise";
- BIND ENCODER_BUTTON_1 SEL/DEV("Prophet V3") "PolyMod Freq Osc A";
- BIND ENCODER_BUTTON_2 SEL/DEV("Prophet V3") "PolyMod PW Osc A";
- BIND ENCODER_BUTTON_3 SEL/DEV("Prophet V3") "PolyMod Filter";
- BIND ENCODER_BUTTON_4 SEL/DEV("Prophet V3") "Osc A Saw";
- BIND ENCODER_BUTTON_5 SEL/DEV("Prophet V3") "Osc A Square";
- BIND ENCODER_BUTTON_6 SEL/DEV("Prophet V3") "Osc A Synchro";
+ BIND SELECT_BUTTON_1 SEL/DEV("Prophet V3") "PolyMod Freq Osc A";
+ BIND SELECT_BUTTON_2 SEL/DEV("Prophet V3") "PolyMod PW Osc A";
+ BIND SELECT_BUTTON_3 SEL/DEV("Prophet V3") "PolyMod Filter";
+ BIND SELECT_BUTTON_4 SEL/DEV("Prophet V3") "Osc A Saw";
+ BIND SELECT_BUTTON_5 SEL/DEV("Prophet V3") "Osc A Square";
+ BIND SELECT_BUTTON_6 SEL/DEV("Prophet V3") "Osc A Synchro";
+ BIND SELECT_BUTTON_7 SEL/DEV("Prophet V3") "Unison On-Off";
+ BIND MUTE_BUTTON_1 SEL/DEV("Prophet V3") "Lfo Midi Synchro";
+ BIND MUTE_BUTTON_2 SEL/DEV("Prophet V3") "Lfo Saw";
+ BIND MUTE_BUTTON_3 SEL/DEV("Prophet V3") "Lfo Triangle";
+ BIND MUTE_BUTTON_4 SEL/DEV("Prophet V3") "Lfo Square";
+ BIND MUTE_BUTTON_5 SEL/DEV("Prophet V3") "Osc B Saw";
+ BIND MUTE_BUTTON_6 SEL/DEV("Prophet V3") "Osc B Triangle";
+ BIND MUTE_BUTTON_7 SEL/DEV("Prophet V3") "Osc B Square";
+ BIND MUTE_BUTTON_8 SEL/DEV("Prophet V3") "Osc B LowFreq";
+ BIND MUTE_BUTTON_8 SEL/DEV("Prophet V3") "Osc B LowFreq";
+ BIND SOLO_BUTTON_1 SEL/DEV("Prophet V3") "WheelMod Freq Osc A";
+ BIND SOLO_BUTTON_2 SEL/DEV("Prophet V3") "WheelMod Freq Osc B";
+ BIND SOLO_BUTTON_3 SEL/DEV("Prophet V3") "WheelMod PW Osc A";
+ BIND SOLO_BUTTON_4 SEL/DEV("Prophet V3") "WheelMod PW Osc B";
+ BIND SOLO_BUTTON_5 SEL/DEV("Prophet V3") "WheelMod Filter";
+ BIND SOLO_BUTTON_6 SEL/DEV("Prophet V3") "Glide On-Off";
+ BIND SOLO_BUTTON_7 SEL/DEV("Prophet V3") "Release On-Off";
 
 $PROPHET_DEVICE_2$ = 
  BIND FADER_1 SEL/DEV("Prophet V3") "Envelope Vca Attack";
@@ -247,3 +273,23 @@ $550_PLUS_1176$ =
  BIND FADER_9 SEL/DEV("UAD UA 1176LN Legacy") "Release";
  BIND ENCODER_KNOB_8 SEL/DEV("UAD UA 1176LN Legacy") "Output";
  BIND ENCODER_KNOB_7 SEL/DEV("UAD UA 1176LN Legacy") "Ratio";
+
+$TRACK_SNAPSHOT$ = 
+ BIND FADER_2 SEL/VOL; 
+ BIND FADER_3 SEL/PAN; 
+ BIND FADER_4 SEL/SEND A; 
+ BIND FADER_5 SEL/SEND B; 
+ BIND FADER_6 SEL/SEND C; 
+ BIND FADER_7 SEL/SEND D; 
+ BIND FADER_8 SEL/SEND E; 
+ BIND FADER_9 SEL/SEND F; 
+
+$FADER_BANK_TWO$ =
+ BIND FADER_2 I/VOL 
+ BIND FADER_3 J/VOL
+ BIND FADER_4 K/VOL
+ BIND FADER_5 L/VOL
+ BIND FADER_6 M/VOL
+ BIND FADER_7 N/VOL
+ BIND FADER_8 O/VOL
+
