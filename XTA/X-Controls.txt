@@ -74,4 +74,4 @@
 # --------------------------------------------------------------------------------------
 
 # >>>>>>>> DELETE THIS ENTIRE LINE AND START YOUR LIST HERE <<<<<<<<
-
+TWISTER_DEVICE = NOTE, 2, 0, 0, 127, $TWISTER_DEVICE$
