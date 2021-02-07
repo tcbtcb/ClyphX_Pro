@@ -1,0 +1,65 @@
+Opening debug log at: 2021-01-22 02:26:09
+Attempting to import user actions from C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro/clyphx_pro/user_actions.
+Successfully imported ExampleActions!
+ClyphX_Pro Library: v1.2.0 ------- Parent script: ClyphX_Pro ------- Live: 10.1.17
+Logging config data
+ -> can_send_and_receive_midi: True
+ -> use_macrobat: True
+ -> can_send_and_receive_osc: True
+ -> use_settings_files: True
+ -> use_xclips: True
+ -> can_show_highlight: True
+ -> use_xcues: True
+Attempting to read config C:\Users\tcb\nativeKONTROL\ClyphX_Pro\Macros.txt
+ -> $MACRO_1$: BIND PLATFORM_M_FADER_1 "keys"/VOL
+Attempting to read config C:\Users\tcb\nativeKONTROL\ClyphX_Pro\Variables.txt
+Attempting to read C:\Users\tcb\nativeKONTROL\ClyphX_Pro\Preferences.txt
+ -> VERSION = 1.0.9
+ -> STARTUP_ACTIONS = NONE
+ -> NAVIGATION_HIGHLIGHT = TRUE
+ -> CLIP_RECORD_LENGTH_SET_BY_GLOBAL_QUANTIZATION = FALSE
+ -> PROCESS_XCLIPS_IF_TRACK_MUTED = TRUE
+ -> ALLOW_BAR_AND_BEAT_SPECS = TRUE
+ -> INCLUDE_NESTED_DEVS_IN_NAME_SEARCH = TRUE
+ -> XCONTROL_ON_THRESHOLD = 33
+ -> ENABLE_BOUND_KEYWORD = TRUE
+ -> SNAPSHOT_PARAMETER_LIMIT = 1000
+ -> STORE_EXTENDED_MIX_SETTINGS = FALSE
+ -> USE_HIGH_RES_SCHEDULER_FOR_RAMPING = TRUE
+ -> UNSCHEDULE_WAITS_ON_PLAYBACK_STOP = TRUE
+ -> INCOMING_OSC_PORT = 7005
+Attempting to read config C:\Users\tcb\nativeKONTROL\ClyphX_Pro\X-Controls.txt
+Successfully imported Bindings Accessory v1.0.7 for ClyphX_Pro_Main
+Attempting to read C:\Users\tcb\nativeKONTROL\ClyphX_Pro\Encoder Bindings.txt
+ -> VERSION = v1.0.5
+ -> PLATFORM_M_FADER_1 = 1, 0, ABSOLUTE, FALSE, "drums"/VOL 
+Attempting to read C:\Users\tcb\nativeKONTROL\ClyphX_Pro\Button Bindings.txt
+ -> VERSION = v1.0.5
+Attempting to read C:\Users\tcb\nativeKONTROL\ClyphX_Pro\MIDI Rack-SysEx.txt
+ -> motif arp i/o = 240 67 16 111 64 112 21 var 247, 0, 1
+ -> motif arp type = 240 67 16 111 64 112 20 var 247, 0, 127
+ -> motif mode = 240 67 16 111 10 0 1 var 247, 0, 3
+Attempting to read config C:\Users\tcb\nativeKONTROL\ClyphX_Pro\X-OSC.txt
+Attempting to read C:\Users\tcb\nativeKONTROL\ClyphX_Pro\Script Linking.txt
+ -> VERSION = 1.0.1
+ -> allow_independent_movement = true
+ -> script_1 = none
+ -> script_2 = none
+ -> link_type_1 = horizontal
+ -> script_3 = none
+ -> link_type_2 = horizontal
+ -> script_4 = none
+ -> link_type_3 = horizontal
+ -> script_5 = none
+ -> link_type_4 = horizontal
+ -> script_6 = none
+ -> link_type_5 = horizontal
+_____________________________________________________________________
+Logging user variables:
+_____________________________________________________________________
+Logging user macros:
+macro_1 = bind platform_m_fader_1 "keys"/vol
+_____________________________________________________________________
+_trigger_action: 
+function: <bound method ClyphX_ProComponent.activate_debugging of <ClyphX_Pro.clyphx_pro.ClyphX_ProComponent.ClyphX_ProComponent object at 0x000000002F7364E0>>
+_____________________________________________________________________

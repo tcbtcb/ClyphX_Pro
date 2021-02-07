@@ -1,0 +1,155 @@
+#********************************** [SETTINGS NOTES] **********************************
+
+# Please DO NOT change any of the spacing in this file.
+
+# Please DO NOT change the name of this file or its file extension.  When done making
+# your changes to the settings below, just save the file.
+
+# After saving this file, you will need to load a new Live Set/reload the
+# current Live Set for your changes to take effect.
+
+
+
+# --------------------------------------------------------------------------------------
+
+[MACROS]
+
+# Below, you can specify a list of Macros to use in Action Lists.
+
+# The entry format is $MACRO_NAME$ = ACTION(s)
+
+# --------------------------------------------------------------------------------------
+# | ENTRY      |  DESCRIPTION
+# --------------------------------------------------------------------------------------
+# | MACRO_NAME |  A unique one-word name for the Macro enclosed in dollar signs.
+# --------------------------------------------------------------------------------------
+# | ACTION(s)  |  The Action(s) to assign to the Macro.  You can also assign Macros to
+# |            |  other Macros.
+# --------------------------------------------------------------------------------------
+
+# See the Macros section of the manual for more info on Macros.
+
+# --------------------------------------------------------------------------------------
+
+# Below is an example list that has been commented out (the # at the beginning of
+# a line makes the line a comment). Your list should be formatted in the same way
+# except without the # at the beginning of each line.
+
+# Single line Macro:
+# $EX_MACRO_1$ = METRO
+
+# Multi line Macro type 1 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_2$ = ARM;
+#  SOLO;
+
+# Multi line Macro type 2 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_3$ =
+#  ARM;
+#  SOLO;
+
+# --------------------------------------------------------------------------------------
+
+# >>>>>>>> DELETE THIS ENTIRE LINE AND START YOUR LIST HERE <<<<<<<<
+
+$FADER_BUS$ =
+ BIND X_FADER_1 "kick"/VOL;
+ BIND X_FADER_2 "snare"/VOL;
+ BIND X_FADER_3 "hat"/VOL;
+ BIND X_FADER_4 "percussion"/VOL;
+ BIND X_FADER_5 "bass"/VOL;
+ BIND X_FADER_6 "guitars"/VOL;
+ BIND X_FADER_7 "elec-piano"/VOL;
+ BIND X_FADER_8 "ac-piano"/VOL;
+ BIND M_FADER_2 "pads"/VOL;
+ BIND M_FADER_3 "leads"/VOL;
+ BIND M_FADER_4 "f/x"/VOL;
+ BIND M_FADER_5 "vox"/VOL;
+ BIND M_FADER_6 "noise"/VOL;
+ BIND M_FADER_7 "ambience"/VOL;
+
+$FADER_16$ =
+ BIND X_FADER_1 1/VOL;
+ BIND X_FADER_2 2/VOL;
+ BIND X_FADER_3 3/VOL;
+ BIND X_FADER_4 4/VOL;
+ BIND X_FADER_5 5/VOL;
+ BIND X_FADER_6 6/VOL;
+ BIND X_FADER_7 7/VOL;
+ BIND X_FADER_8 8/VOL;
+ BIND M_FADER_1 9/VOL;
+ BIND M_FADER_2 10/VOL;
+ BIND M_FADER_3 11/VOL;
+ BIND M_FADER_4 12/VOL;
+ BIND M_FADER_5 13/VOL;
+ BIND M_FADER_6 14/VOL;
+ BIND M_FADER_7 15/VOL;
+ BIND M_FADER_8 16/VOL;
+
+
+$FADER_32$ =
+ BIND X_FADER_1 17/VOL;
+ BIND X_FADER_2 18/VOL;
+ BIND X_FADER_3 19/VOL;
+ BIND X_FADER_4 20/VOL;
+ BIND X_FADER_5 21/VOL;
+ BIND X_FADER_6 22/VOL;
+ BIND X_FADER_7 23/VOL;
+ BIND X_FADER_8 24/VOL;
+ BIND M_FADER_1 25/VOL;
+ BIND M_FADER_2 26/VOL;
+ BIND M_FADER_3 27/VOL;
+ BIND M_FADER_4 28/VOL;
+ BIND M_FADER_5 29/VOL;
+ BIND M_FADER_6 30/VOL;
+ BIND M_FADER_7 31/VOL;
+ BIND M_FADER_8 32/VOL;
+
+$FADER_16_SENDS$ =
+ BIND MFT_B1_ENC01 1/SEND A;
+ BIND MFT_B1_ENC02 2/SEND A;
+ BIND MFT_B1_ENC03 3/SEND A;
+ BIND MFT_B1_ENC04 4/SEND A;
+ BIND MFT_B1_ENC05 5/SEND A;
+ BIND MFT_B1_ENC06 6/SEND A;
+ BIND MFT_B1_ENC07 7/SEND A;
+ BIND MFT_B1_ENC08 8/SEND A;
+ BIND MFT_B1_ENC09 9/SEND A;
+ BIND MFT_B1_ENC10 10/SEND A;
+ BIND MFT_B1_ENC11 11/SEND A;
+ BIND MFT_B1_ENC12 12/SEND A;
+ BIND MFT_B1_ENC13 13/SEND A;
+ BIND MFT_B1_ENC14 14/SEND A;
+ BIND MFT_B1_ENC15 15/SEND A;
+ BIND MFT_B1_ENC16 16/SEND A;
+ BIND MFT_B2_ENC17 1/SEND B;
+ BIND MFT_B2_ENC18 2/SEND B;
+ BIND MFT_B2_ENC19 3/SEND B;
+ BIND MFT_B2_ENC20 4/SEND B;
+ BIND MFT_B2_ENC21 5/SEND B;
+ BIND MFT_B2_ENC22 6/SEND B;
+ BIND MFT_B2_ENC23 7/SEND B;
+ BIND MFT_B2_ENC24 8/SEND B;
+ BIND MFT_B2_ENC25 9/SEND B;
+ BIND MFT_B2_ENC26 10/SEND B;
+ BIND MFT_B2_ENC27 11/SEND B;
+ BIND MFT_B2_ENC28 12/SEND B;
+ BIND MFT_B2_ENC29 13/SEND B;
+ BIND MFT_B2_ENC30 14/SEND B;
+ BIND MFT_B2_ENC31 15/SEND B;
+ BIND MFT_B2_ENC32 16/SEND B;
+ BIND MFT_B2_ENC33 1/SEND C;
+ BIND MFT_B2_ENC34 2/SEND C;
+ BIND MFT_B2_ENC35 3/SEND C;
+ BIND MFT_B2_ENC36 4/SEND C;
+ BIND MFT_B2_ENC37 5/SEND C;
+ BIND MFT_B2_ENC38 6/SEND C;
+ BIND MFT_B2_ENC39 7/SEND C;
+ BIND MFT_B2_ENC40 8/SEND C;
+ BIND MFT_B2_ENC41 9/SEND C;
+ BIND MFT_B2_ENC42 10/SEND C;
+ BIND MFT_B2_ENC43 11/SEND C;
+ BIND MFT_B2_ENC44 12/SEND C;
+ BIND MFT_B2_ENC45 13/SEND C;
+ BIND MFT_B2_ENC46 14/SEND C;
+ BIND MFT_B2_ENC47 15/SEND C;
+ BIND MFT_B2_ENC48 16/SEND C;
