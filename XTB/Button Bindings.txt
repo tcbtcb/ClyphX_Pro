@@ -151,3 +151,7 @@ VERSION = v1.0.5
 # BTN_3 = CC, 9, 2, 127, 0, SEL/DEV(SEL) "Device On"
 
 #>>>>>>>> DELETE THIS ENTIRE LINE AND START YOUR LIST HERE <<<<<<<<
+
+# Bank 1
+# Bank 2
+MFT_B2_BUT01 = CC, 2, 64, 0, 127, NONE
