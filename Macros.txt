@@ -546,14 +546,18 @@ $SINGLE_TRACK$ =
  BIND MFT_B2_ENC32 SEL/DEV(1) B1 P8;
 
 $MFT_DEFAULT$ =
- BIND MFT_B1_ENC01 SEL/DEV("Lindell 50 Channel") "High Pass";
+ BIND MFT_B1_ENC01 SEL/DEV("Lindell 50 Channel") "High Pass Freq";
+ BIND MFT_B1_BUT01 SEL/DEV("Lindell 50 Channel") "High Pass";
  BIND MFT_B1_ENC02 SEL/DEV("Lindell 50 Channel") "High Gain";
+ BIND MFT_B1_BUT02 SEL/DEV("Lindell 50 Channel") "EQ In";
  BIND MFT_B1_ENC03 SEL/DEV("Lindell 50 Channel") "High Freq";
  BIND MFT_B1_ENC04 SEL/DEV("Lindell 50 Channel") "VCA Threshold";
- BIND MFT_B1_ENC05 SEL/DEV("Lindell 50 Channel") "High Pass Freq";
+ BIND MFT_B1_BUT04 SEL/DEV("Lindell 50 Channel") "Comp In";
+ BIND MFT_B1_ENC05 SEL/DEV("Lindell 50 Channel") "Pre Gain";
  BIND MFT_B1_ENC06 SEL/DEV("Lindell 50 Channel") "High Mid Gain";
  BIND MFT_B1_ENC07 SEL/DEV("Lindell 50 Channel") "High Mid Freq";
  BIND MFT_B1_ENC08 SEL/DEV("Lindell 50 Channel") "VCA Attack";
+ BIND MFT_B1_ENC09 SEL/DEV("Lindell 50 Channel") "Level";
  BIND MFT_B1_ENC10 SEL/DEV("Lindell 50 Channel") "Low Mid Gain";
  BIND MFT_B1_ENC11 SEL/DEV("Lindell 50 Channel") "Low Mid Freq";
  BIND MFT_B1_ENC12 SEL/DEV("Lindell 50 Channel") "VCA Ratio";
@@ -576,4 +580,9 @@ $MFT_DEFAULT$ =
  BIND MFT_B2_ENC30 SEL/DEV("elysia mpressor") "EQ Freq";
  BIND MFT_B2_ENC31 SEL/DEV("elysia mpressor") "GR Limit";
  BIND MFT_B2_ENC32 SEL/DEV("elysia mpressor") "Gain";
- BIND MFT_B1_BUT01 SEL/DEV 
+ BIND MFT_B2_BUT25 SEL/DEV("elysia mpressor") "SC Extern"; 
+ BIND MFT_B2_BUT26 SEL/DEV("elysia mpressor") "Auto Fast";
+ BIND MFT_B2_BUT27 SEL/DEV("elysia mpressor") "Anti Log";
+ BIND MFT_B2_BUT29 SEL/DEV("elysia mpressor") "EQ On";
+ BIND MFT_B2_BUT30 SEL/DEV("elysia mpressor") "EQ Freq x10";
+ BIND MFT_B2_BUT31 SEL/DEV("elysia mpressor") "GR Limit On";
