@@ -587,3 +587,6 @@ $MFT_DEFAULT$ =
  BIND MFT_B2_BUT29 SEL/DEV("elysia mpressor") "EQ On";
  BIND MFT_B2_BUT30 SEL/DEV("elysia mpressor") "EQ Freq x10";
  BIND MFT_B2_BUT31 SEL/DEV("elysia mpressor") "GR Limit On";
+
+$MFT_DJ$ =
+ BIND MFT_B1_ENC01 SEL/A; 
