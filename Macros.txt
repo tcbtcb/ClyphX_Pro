@@ -1,0 +1,120 @@
+#********************************** [SETTINGS NOTES] **********************************
+
+# Please DO NOT change any of the spacing in this file.
+
+# Please DO NOT change the name of this file or its file extension.  When done making
+# your changes to the settings below, just save the file.
+
+# After saving this file, you will need to load a new Live Set/reload the
+# current Live Set for your changes to take effect.
+
+
+
+# --------------------------------------------------------------------------------------
+
+[MACROS]
+
+# Below, you can specify a list of Macros to use in Action Lists.
+
+# The entry format is $MACRO_NAME$ = ACTION(s)
+
+# --------------------------------------------------------------------------------------
+# | ENTRY      |  DESCRIPTION
+# --------------------------------------------------------------------------------------
+# | MACRO_NAME |  A unique one-word name for the Macro enclosed in dollar signs.
+# --------------------------------------------------------------------------------------
+# | ACTION(s)  |  The Action(s) to assign to the Macro.  You can also assign Macros to
+# |            |  other Macros.
+# --------------------------------------------------------------------------------------
+
+# See the Macros section of the manual for more info on Macros.
+
+# --------------------------------------------------------------------------------------
+
+# Below is an example list that has been commented out (the # at the beginning of
+# a line makes the line a comment). Your list should be formatted in the same way
+# except without the # at the beginning of each line.
+
+# Single line Macro:
+# $EX_MACRO_1$ = METRO
+
+# Multi line Macro type 1 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_2$ = ARM;
+#  SOLO;
+
+# Multi line Macro type 2 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_3$ =
+#  ARM;
+#  SOLO;
+
+# --------------------------------------------------------------------------------------
+
+$MAP_FADERS_A_1_8$ =
+ BIND BANK_A_FADER_1 1/VOL;
+ BIND BANK_A_FADER_2 2/VOL;
+ BIND BANK_A_FADER_3 3/VOL;
+ BIND BANK_A_FADER_4 4/VOL;
+ BIND BANK_A_FADER_5 5/VOL;
+ BIND BANK_A_FADER_6 6/VOL;
+ BIND BANK_A_FADER_7 7/VOL;
+ BIND BANK_A_FADER_8 8/VOL;
+
+$MAP_FADERS_A_9_16$ =
+ BIND BANK_A_FADER_1 9/VOL;
+ BIND BANK_A_FADER_2 10/VOL;
+ BIND BANK_A_FADER_3 11/VOL;
+ BIND BANK_A_FADER_4 12/VOL;
+ BIND BANK_A_FADER_5 13/VOL;
+ BIND BANK_A_FADER_6 14/VOL;
+ BIND BANK_A_FADER_7 15/VOL;
+ BIND BANK_A_FADER_8 16/VOL;
+
+$MAP_FADERS_A_17_24$ =
+ BIND BANK_A_FADER_1 17/VOL;
+ BIND BANK_A_FADER_2 18/VOL;
+ BIND BANK_A_FADER_3 19/VOL;
+ BIND BANK_A_FADER_4 20/VOL;
+ BIND BANK_A_FADER_5 21/VOL;
+ BIND BANK_A_FADER_6 22/VOL;
+ BIND BANK_A_FADER_7 23/VOL;
+ BIND BANK_A_FADER_8 24/VOL;
+
+$MAP_FADERS_A_25_32$ =
+ BIND BANK_A_FADER_1 25/VOL;
+ BIND BANK_A_FADER_2 26/VOL;
+ BIND BANK_A_FADER_3 27/VOL;
+ BIND BANK_A_FADER_4 28/VOL;
+ BIND BANK_A_FADER_5 29/VOL;
+ BIND BANK_A_FADER_6 30/VOL;
+ BIND BANK_A_FADER_7 31/VOL;
+ BIND BANK_A_FADER_8 32/VOL;
+
+$MAP_BUSES_1$ =
+ BIND BANK_A_FADER_1 "KICK-G"/VOL;
+ BIND BANK_A_FADER_2 "SNARE-G"/VOL;
+ BIND BANK_A_FADER_3 "HAT-G"/VOL;
+ BIND BANK_A_FADER_4 "PERCUSSION-G"/VOL;
+ BIND BANK_A_FADER_5 "BASS-G"/VOL;
+ BIND BANK_A_FADER_6 "GUITARS-G"/VOL;
+ BIND BANK_A_FADER_7 "EL-PIANO-G"/VOL;
+ BIND BANK_A_FADER_8 "AC-PIANO-G"/VOL;
+ BIND BANK_A_FADER_9 "PADS-G"/VOL;
+
+$MAP_BUSES_2$ =
+ BIND BANK_A_FADER_1 "LEADS-G"/VOL;
+ BIND BANK_A_FADER_2 "FX-G"/VOL;
+ BIND BANK_A_FADER_3 "VOX-G"/VOL;
+ BIND BANK_A_FADER_4 "NOISE-G"/VOL;
+ BIND BANK_A_FADER_5 "AMBIENCE-G"/VOL;
+ BIND BANK_A_FADER_6 "SUB-DRUMS"/VOL;
+ BIND BANK_A_FADER_7 "SUB-LOW"/VOL;
+ BIND BANK_A_FADER_8 "SUB-MED"/VOL;
+ BIND BANK_A_FADER_9 "SUB-HIGH"/VOL;
+
+$SINGLE_TRACK$ = 
+ BIND BANK_B_FADER_1 SEL/VOL;
+ BIND BANK_B_FADER_2 SEL/PAN;
+ BIND MFT_B1_ENC_01 SEL/SEND A;
+ BIND MFT_B1_ENC_02 SEL/SEND B;
+ BIND MFT_B1_ENC_03 SEL/SEND C;
+ BIND MFT_B1_ENC_04 SEL/SEND D;
