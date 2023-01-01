@@ -73,4 +73,5 @@
 
 # --------------------------------------------------------------------------------------
 
-MF_B1_BTN_16 = NOTE, 2, 16, 0, 127, $SINGLE_TRACK$
+# SINGLETRACK = NOTE, 2, 16, 0, 127, $SINGLE_TRACK$
+# WAVESTATE = NOTE, 2, 15, 0, 127, $WAVESTATE$
