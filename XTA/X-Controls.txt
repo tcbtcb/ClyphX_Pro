@@ -72,6 +72,5 @@
 #  NAME "My Track"
 
 # --------------------------------------------------------------------------------------
-
-# SINGLETRACK = NOTE, 2, 16, 0, 127, $SINGLE_TRACK$
-# WAVESTATE = NOTE, 2, 15, 0, 127, $WAVESTATE$
+SEL_RACK = NOTE, 2, 1, 0, 127, $SELECTED_RACK$;
+TESTMFT = NOTE, 2, 2, 0, 127, $TEST_MFT$; 
