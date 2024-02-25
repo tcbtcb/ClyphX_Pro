@@ -358,3 +358,9 @@ $DJ_INIT$ =
  BIND BANK_A_ROW_3_6 6/SEND C;
  BIND BANK_A_ROW_3_7 7/SEND C;
  BIND BANK_A_ROW_3_8 8/SEND C;
+
+$MIDDLE_TRAX$ =
+ BIND MFT_B1_ENC_01 "track03"/DEV("filterChannel") "send";
+ BIND MFT_B1_ENC_05 "track03"/DEV("filterChannel") "res";
+ BIND MFT_B1_ENC_09 "track03"/DEV("filterChannel") "lpfreq";
+ BIND MFT_B1_ENC_13 "track03"/DEV("filterChannel") "hpfreq";
