@@ -72,5 +72,5 @@
 #  NAME "My Track"
 
 # --------------------------------------------------------------------------------------
-SEL_RACK = NOTE, 2, 1, 0, 127, $SELECTED_RACK$;
 TESTMFT = NOTE, 2, 2, 0, 127, $TEST_MFT$; 
+DRUMFX = NOTE, 2, 1, 0, 127, $DUB_DRUM_FX$;
