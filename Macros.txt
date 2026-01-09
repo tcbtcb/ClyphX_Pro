@@ -1,0 +1,101 @@
+#********************************** [SETTINGS NOTES] **********************************
+
+# Please DO NOT change any of the spacing in this file.
+
+# Please DO NOT change the name of this file or its file extension.  When done making
+# your changes to the settings below, just save the file.
+
+# After saving this file, you will need to load a new Live Set/reload the
+# current Live Set for your changes to take effect.
+
+
+
+# --------------------------------------------------------------------------------------
+
+[MACROS]
+
+# Below, you can specify a list of Macros to use in Action Lists.
+
+# The entry format is $MACRO_NAME$ = ACTION(s)
+
+# --------------------------------------------------------------------------------------
+# | ENTRY      |  DESCRIPTION
+# --------------------------------------------------------------------------------------
+# | MACRO_NAME |  A unique one-word name for the Macro enclosed in dollar signs.
+# --------------------------------------------------------------------------------------
+# | ACTION(s)  |  The Action(s) to assign to the Macro.  You can also assign Macros to
+# |            |  other Macros.
+# --------------------------------------------------------------------------------------
+
+# See the Macros section of the manual for more info on Macros.
+
+# --------------------------------------------------------------------------------------
+
+# Below is an example list that has been commented out (the # at the beginning of
+# a line makes the line a comment). Your list should be formatted in the same way
+
+# Single line Macro:
+# $EX_MACRO_1$ = METRO
+
+# Multi line Macro type 1 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_2$ = ARM;
+#  SOLO;
+
+# Multi line Macro type 2 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_3$ =
+#  ARM;
+#  SOLO;
+#  Track Vars below 
+# 
+3
+#      %TRK_DRM% 
+#      %TRK_GTR% 
+#      %TRK_KEY% 
+#      %TRK_LED% 
+#      %TRK_DLY% 
+#      %TRK_HRN% 
+#      %TRK_VOX% 
+#      %TRK_PAD% 
+#      %TRK_SYN% 
+#      %TRK_BAS% 
+#
+# --------------------------------------------------------------------------------------
+ BIND FADER_05 "DUB-DELAY"/DEV("val-dub") "feedback";
+# 
+$DUB_FADERS$ =
+ BIND FADER_01 %TRK_DRM%/VOL;
+ BIND FADER_02 %TRK_GTR%/VOL;
+ BIND FADER_03 %TRK_KEY%/VOL;
+ BIND FADER_04 %TRK_LED%/VOL;
+ BIND FADER_05 %TRK_DLY%/DEV("val-dub") "feedback";
+ BIND FADER_06 %TRK_HRN%/VOL;
+ BIND FADER_07 %TRK_VOX%/VOL;
+ BIND FADER_08 %TRK_PAD%/VOL;
+ BIND FADER_09 %TRK_SYN%/VOL;
+ BIND FADER_10 %TRK_BAS%/VOL;
+
+$DUB_MFT_SENDS$ =
+ BIND %MF_ENC_ROW_4_1% %TRK_DRM%/SEND E;
+ BIND %MF_ENC_ROW_4_2% %TRK_GTR%/SEND E;
+ BIND %MF_ENC_ROW_4_3% %TRK_KEY%/SEND E;
+ BIND %MF_ENC_ROW_4_4% %TRK_LED%/SEND E;
+ BIND %MF_ENC_ROW_4_5% %TRK_HRN%/SEND E;
+ BIND %MF_ENC_ROW_4_6% %TRK_VOX%/SEND E;
+ BIND %MF_ENC_ROW_4_7% %TRK_PAD%/SEND E;
+ BIND %MF_ENC_ROW_4_8% %TRK_SYN%/SEND E;
+ BIND %MF_ENC_ROW_1_1% %TRK_DRM%/SEND A;
+ BIND %MF_ENC_ROW_1_2% %TRK_GTR%/SEND A;
+ BIND %MF_ENC_ROW_1_3% %TRK_KEY%/SEND A;
+ BIND %MF_ENC_ROW_1_4% %TRK_LED%/SEND A;
+ BIND %MF_ENC_ROW_1_5% %TRK_HRN%/SEND A;
+ BIND %MF_ENC_ROW_1_6% %TRK_VOX%/SEND A;
+ BIND %MF_ENC_ROW_1_7% %TRK_PAD%/SEND A;
+ BIND %MF_ENC_ROW_1_8% %TRK_SYN%/SEND A;
+ BIND %MF_BTN_ROW_4_1% %TRK_DRM%/MUTE;
+ BIND %MF_BTN_ROW_4_2% %TRK_GTR%/MUTE;
+ BIND %MF_BTN_ROW_4_3% %TRK_KEY%/MUTE;
+ BIND %MF_BTN_ROW_4_4% %TRK_LED%/MUTE;
+ BIND %MF_BTN_ROW_4_5% %TRK_HRN%/MUTE;
+ BIND %MF_BTN_ROW_4_6% %TRK_VOX%/MUTE;
+ BIND %MF_BTN_ROW_4_7% %TRK_PAD%/MUTE;
+ BIND %MF_BTN_ROW_4_8% %TRK_SYN%/MUTE;
