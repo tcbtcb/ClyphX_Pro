@@ -72,27 +72,25 @@
 #  NAME "My Track"
 
 # --------------------------------------------------------------------------------------
-
-BTN_27 = CC, 1, 27, 0, 127,
- $TRACKS_01-10$;
- $SELECT_01-10$;
- $MUTE_01-10$;
- $SOLO_01-10$;
-
-BTN_26 = CC, 1, 26, 0, 127,
- $TRACKS_11-20$;
- $SELECT_11-20$;
- $MUTE_11-20$;
- $SOLO_11-20$
-
-BTN_25 = CC, 1, 25, 0, 127,
- $TRACKS_21-30$;
- $SELECT_21-30$;
- $MUTE_21-30$;
- $SOLO_21-30$
-
-BTN_22 = CC, 1, 22, 0, 127, $DUB_INIT$
-LAST_ACTION = CC, 1, 24, 0, 127, $LAST_PARAM$ 
-BTN_21 = CC, 1, 21, 0, 127, $MICROWAVE$
-
-# BTN_MF_OPSIX = NOTE, 2, 13, 0, 127, $MF_OPSIX$
+#
+#BTN_27 = CC, 1, 27, 0, 127,
+# $TRACKS_01-10$;
+# $SELECT_01-10$;
+# $MUTE_01-10$;
+# $SOLO_01-10$;
+#
+#BTN_26 = CC, 1, 26, 0, 127,
+# $TRACKS_11-20$;
+# $SELECT_11-20$;
+# $MUTE_11-20$;
+# $SOLO_11-20$
+#
+#BTN_25 = CC, 1, 25, 0, 127,
+# $TRACKS_21-30$;
+# $SELECT_21-30$;
+# $MUTE_21-30$;
+# $SOLO_21-30$
+#
+BTN_21 = CC, 1, 21, 0, 127, $DUB_INIT$
+#LAST_ACTION = CC, 1, 24, 0, 127, $LAST_PARAM$ 
+#BTN_21 = CC, 1, 21, 0, 127, $MICROWAVE$

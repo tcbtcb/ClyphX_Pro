@@ -13,54 +13,32 @@ VERSION = v1.0.9
 
 #********************************** [SETTINGS] *****************************************
 
-# Below you can specify a list of MIDI Encoder/Knobs/Faders to bind parameters to.
+# Below you can specify a list of MIDI Buttons to bind parameters to.
 
-# The entry format is: NAME = CHANNEL, CC, MAPPING_MODE, NEEDS_TAKEOVER, BINDING
+# The entry format is: NAME = TYPE, CHANNEL, NOTE_OR_CC, OFF_LED, ON_LED, BINDING
 
 # --------------------------------------------------------------------------------------
-# | ENTRY          |  DESCRIPTION      
+# | ENTRY      |  DESCRIPTION
 # --------------------------------------------------------------------------------------
-# | NAME           |  A unique one-word name for the control.
+# | NAME       |  A unique one-word name for the control.
 # --------------------------------------------------------------------------------------
-# | CHANNEL        |  The MIDI Channel number in the range of 1-16.
+# | TYPE       |  The type of MIDI message the control sends (NOTE or CC).
 # --------------------------------------------------------------------------------------
-# | CC             |  The CC number in the range of 0-127.
+# | CHANNEL    |  The MIDI Channel number in the range of 1-16.
 # --------------------------------------------------------------------------------------
-# | MAPPING_MODE   |  The type of mapping mode the control uses.  See the MAPPING MODES
-# |                |  section below for information on mapping modes.
+# | NOTE_OR_CC |  The Note or CC number in the range of 0-127.
 # --------------------------------------------------------------------------------------
-# | NEEDS_TAKEOVER |  Either TRUE or FALSE. This specifies whether the control needs
-# |                |  takeover, which will typically be TRUE for standard knobs and faders
-# |                |  with a fixed range of motion that aren't motorized.
+# | OFF_LED    |  The LED value in the range of 0-127 to use by default and when the
+# |            |  parameter is at its minimum value.  If in doubt, use 0.
 # --------------------------------------------------------------------------------------
-# | BINDING        |  The parameter to bind the control to.  See the BINDING OPTIONS
-# |                |  section below for information on the available bindings.
+# | ON_LED     |  The LED value in the range of 0-127 to use when the parameter is not
+# |            |  at its minimum value.  If in doubt, use 127.
+# --------------------------------------------------------------------------------------
+# | BINDING    |  The parameter to bind the control to.  See the BINDING OPTIONS section
+# |            |  below for information on the available bindings.
 # --------------------------------------------------------------------------------------
 
-# Example: MY_KNOB = 1, 10, ABSOLUTE, TRUE, SEL/VOL
-
-
-#********************************** [MAPPING MODES] ************************************
-
-# This specifies the type of values the control sends. If you're not sure what values
-# your control sends, you can find out like so:
-#   -   In Live's preferences, turn on the Remote switch for the controller.
-#   -   Go into MIDI mapping mode and map the control to a parameter while looking in the
-#       lower left hand corner of Live's window. The mapping mode will be displayed there.
-
-
-# The names of the available mapping modes are as follows:
-
-# ABSOLUTE
-# ABSOLUTE_14_BIT
-# RELATIVE_BINARY_OFFSET
-# RELATIVE_SIGNED_BIT
-# RELATIVE_SIGNED_BIT2
-# RELATIVE_SMOOTH_BINARY_OFFSET
-# RELATIVE_SMOOTH_SIGNED_BIT
-# RELATIVE_SMOOTH_SIGNED_BIT2
-# RELATIVE_SMOOTH_TWO_COMPLIMENT
-# RELATIVE_TWO_COMPLIMENT
+# Example: MY_BTN1 = NOTE, 1, 10, 0, 127, SEL/DEV(SEL) "Filter Type"
 
 
 #********************************** [BINDING OPTIONS] **********************************
@@ -136,47 +114,102 @@ VERSION = v1.0.9
 # by clicking the Unfold Device Parameters button for the Plug-in.
 
 
-#****************************************************************************************
-# Below is an example list that has been commented out (the #  at the beginning of
-# a line makes the line a comment). Your list should be formatted  in the same way
-# except without the # at the beginning of each line.
+# Buttons can also be bound to the following properties.
+
+# --------------------------------------------------------------------------------------
+# | NAME         |  APPLIES TO/DESCRIPTION                       |  EXAMPLE
+# --------------------------------------------------------------------------------------
+# | ARM          |  Regular Tracks.                              |  SEL/ARM
+# --------------------------------------------------------------------------------------
+# | MON x        |  Regular Tracks where x specifies the         |  1/MON IN
+# |              |  monitoring state to set (IN, AUTO or OFF)    |
+# --------------------------------------------------------------------------------------
+# | MUTE         |  Regular Tracks and Return Tracks.            |  A/MUTE
+# --------------------------------------------------------------------------------------
+# | PLAY         |  Regular Tracks. This will launch the Clip/   |  SEL/PLAY
+# |              |  Clip Slot on the selected Scene.             |
+# --------------------------------------------------------------------------------------
+# | SEL          |  Any Track. This will select the Track.       |  6/SEL
+# --------------------------------------------------------------------------------------
+# | SOLO         |  Regular Tracks and Return Tracks.            |  "My Track"/SOLO
+# --------------------------------------------------------------------------------------
+# | STOP         |  Regular Tracks. This will stop any Clips     |  2/STOP
+# |              |  that are playing on the Track.               |
+# --------------------------------------------------------------------------------------
+# | XFADE x      |  Regular Tracks and Return Tracks where x     |  SEL/XFADE B
+# |              |  specifies the crossfade assignment           |
+# |              |  (A, B or OFF).                               |
+# --------------------------------------------------------------------------------------
 
 
-# FADER_1 = 1, 0, ABSOLUTE, TRUE, "My Track"/SEND A
+# MF 1 Bank 1 Buttons
+MF1_B1_BTN_01 = NOTE, 2, 1, 0, 127, NONE
+MF1_B1_BTN_02 = NOTE, 2, 2, 0, 127, NONE
+MF1_B1_BTN_03 = NOTE, 2, 3, 0, 127, NONE
+MF1_B1_BTN_04 = NOTE, 2, 4, 0, 127, NONE
+MF1_B1_BTN_05 = NOTE, 2, 5, 0, 127, NONE
+MF1_B1_BTN_06 = NOTE, 2, 6, 0, 127, NONE
+MF1_B1_BTN_07 = NOTE, 2, 7, 0, 127, NONE
+MF1_B1_BTN_08 = NOTE, 2, 8, 0, 127, NONE
+MF1_B1_BTN_09 = NOTE, 2, 9, 0, 127, NONE
+MF1_B1_BTN_10 = NOTE, 2, 10, 0, 127, NONE
+MF1_B1_BTN_11 = NOTE, 2, 11, 0, 127, NONE
+MF1_B1_BTN_12 = NOTE, 2, 12, 0, 127, NONE
+MF1_B1_BTN_13 = NOTE, 2, 13, 0, 127, NONE
+MF1_B1_BTN_14 = NOTE, 2, 14, 0, 127, NONE
+MF1_B1_BTN_15 = NOTE, 2, 15, 0, 127, NONE
+MF1_B1_BTN_16 = NOTE, 2, 16, 0, 127, NONE
 
-# KNOB_1 = 1, 1, ABSOLUTE, TRUE, SELP
+# MF 1 Bank 2 Buttons
+MF1_B2_BTN_01 = NOTE, 2, 17, 0, 127, NONE
+MF1_B2_BTN_02 = NOTE, 2, 18, 0, 127, NONE
+MF1_B2_BTN_03 = NOTE, 2, 19, 0, 127, NONE
+MF1_B2_BTN_04 = NOTE, 2, 20, 0, 127, NONE
+MF1_B2_BTN_05 = NOTE, 2, 21, 0, 127, NONE
+MF1_B2_BTN_06 = NOTE, 2, 22, 0, 127, NONE
+MF1_B2_BTN_07 = NOTE, 2, 23, 0, 127, NONE
+MF1_B2_BTN_08 = NOTE, 2, 24, 0, 127, NONE
+MF1_B2_BTN_09 = NOTE, 2, 25, 0, 127, NONE
+MF1_B2_BTN_10 = NOTE, 2, 26, 0, 127, NONE
+MF1_B2_BTN_11 = NOTE, 2, 27, 0, 127, NONE
+MF1_B2_BTN_12 = NOTE, 2, 28, 0, 127, NONE
+MF1_B2_BTN_13 = NOTE, 2, 29, 0, 127, NONE
+MF1_B2_BTN_14 = NOTE, 2, 30, 0, 127, NONE
+MF1_B2_BTN_15 = NOTE, 2, 31, 0, 127, NONE
+MF1_B2_BTN_16 = NOTE, 2, 32, 0, 127, NONE
 
-# ENC_1 = 9, 2, RELATIVE_TWO_COMPLIMENT, FALSE, SEL/DEV(SEL) CH(SEL) VOL
+# MF 1 Bank 3 Buttons
+MF1_B3_BTN_01 = NOTE, 2, 33, 0, 127, NONE
+MF1_B3_BTN_02 = NOTE, 2, 34, 0, 127, NONE
+MF1_B3_BTN_03 = NOTE, 2, 35, 0, 127, NONE
+MF1_B3_BTN_04 = NOTE, 2, 36, 0, 127, NONE
+MF1_B3_BTN_05 = NOTE, 2, 37, 0, 127, NONE
+MF1_B3_BTN_06 = NOTE, 2, 38, 0, 127, NONE
+MF1_B3_BTN_07 = NOTE, 2, 39, 0, 127, NONE
+MF1_B3_BTN_08 = NOTE, 2, 40, 0, 127, NONE
+MF1_B3_BTN_09 = NOTE, 2, 41, 0, 127, NONE
+MF1_B3_BTN_10 = NOTE, 2, 42, 0, 127, NONE
+MF1_B3_BTN_11 = NOTE, 2, 43, 0, 127, NONE
+MF1_B3_BTN_12 = NOTE, 2, 44, 0, 127, NONE
+MF1_B3_BTN_13 = NOTE, 2, 45, 0, 127, NONE
+MF1_B3_BTN_14 = NOTE, 2, 46, 0, 127, NONE
+MF1_B3_BTN_15 = NOTE, 2, 47, 0, 127, NONE
+MF1_B3_BTN_16 = NOTE, 2, 48, 0, 127, NONE
 
-# LEFT SECTION
-HIGHCUT = 1, 105, ABSOLUTE, FALSE, NONE
-LOWCUT = 1, 107, ABSOLUTE, FALSE, NONE
-INGAIN = 1, 103, ABSOLUTE, FALSE, NONE 
-
-# SHAPE Section 
-GATE_REL = 1, 56, ABSOLUTE, FALSE, NONE
-GATE = 1, 54, ABSOLUTE, FALSE,  NON
-SUSTAIN = 1, 55, ABSOLUTE, FALSE, NONE
-PUNCH = 1, 57, ABSOLUTE, FALSE, NONE
-
-# EQ Section
-EQ_ROW_1_1 = 1, 90, ABSOLUTE, FALSE, NONE 
-EQ_ROW_1_2 = 1, 87, ABSOLUTE, FALSE, NONE 
-EQ_ROW_2_1 = 1, 92, ABSOLUTE, FALSE, NONE 
-EQ_ROW_2_2 = 1, 89, ABSOLUTE, FALSE, NONE 
-EQ_ROW_2_3 = 1, 86, ABSOLUTE, FALSE, NONE 
-EQ_ROW_2_4 = 1, 83, ABSOLUTE, FALSE, NONE 
-EQ_ROW_3_1 = 1, 91, ABSOLUTE, FALSE, NONE 
-EQ_ROW_3_2 = 1, 88, ABSOLUTE, FALSE, NONE 
-EQ_ROW_3_3 = 1, 85, ABSOLUTE, FALSE, NONE 
-EQ_ROW_3_4 = 1, 82, ABSOLUTE, FALSE, NONE 
-
-# Comp Section 
-COMP_ROW_1_1 = 1, 51, ABSOLUTE, FALSE, 1/PAN
-COMP_ROW_1_2 = 1, 15, ABSOLUTE, FALSE, 2/PAN
-COMP_ROW_2_1 = 1, 49, ABSOLUTE, FALSE, 3/PAN
-COMP_ROW_2_2 = 1, 48, ABSOLUTE, FALSE, 4/PAN
-COMP_ROW_2_3 = 1, 18, ABSOLUTE, FALSE, 5/PAN
-COMP_ROW_3_1 = 1, 50, ABSOLUTE, FALSE, 6/PAN
-COMP_ROW_3_2 = 1, 47, ABSOLUTE, FALSE, 7/PAN
-COMP_ROW_3_3 = 1, 10, ABSOLUTE, FALSE, 8/PAN
+# MF 1 Bank 4 Buttons
+MF1_B4_BTN_01 = NOTE, 2, 49, 0, 127, NONE
+MF1_B4_BTN_02 = NOTE, 2, 50, 0, 127, NONE
+MF1_B4_BTN_03 = NOTE, 2, 51, 0, 127, NONE
+MF1_B4_BTN_04 = NOTE, 2, 52, 0, 127, NONE
+MF1_B4_BTN_05 = NOTE, 2, 53, 0, 127, NONE
+MF1_B4_BTN_06 = NOTE, 2, 54, 0, 127, NONE
+MF1_B4_BTN_07 = NOTE, 2, 55, 0, 127, NONE
+MF1_B4_BTN_08 = NOTE, 2, 56, 0, 127, NONE
+MF1_B4_BTN_09 = NOTE, 2, 57, 0, 127, NONE
+MF1_B4_BTN_10 = NOTE, 2, 58, 0, 127, NONE
+MF1_B4_BTN_11 = NOTE, 2, 59, 0, 127, NONE
+MF1_B4_BTN_12 = NOTE, 2, 60, 0, 127, NONE
+MF1_B4_BTN_13 = NOTE, 2, 61, 0, 127, NONE
+MF1_B4_BTN_14 = NOTE, 2, 62, 0, 127, NONE
+MF1_B4_BTN_15 = NOTE, 2, 63, 0, 127, NONE
+MF1_B4_BTN_16 = NOTE, 2, 64, 0, 127, NONE
